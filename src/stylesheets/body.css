@@ -1,0 +1,18 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    background-color: silver;
+    color: black;
+}
+
+.body__p {
+   height: 20px;
+}
+
+.body__button {
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
