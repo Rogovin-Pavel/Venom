@@ -8,11 +8,22 @@
 }
 
 .body__p {
-   height: 20px;
+    background-color: gray;
+    align-self: center;
+    padding: 3px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 20px;
 }
 
 .body__button {
-    align-items: center;
-    justify-content: center;
+    position: fixed;
+    top: 250px;
+    left: 250px;
+    align-self: center;
     height: 20px;
+}
+
+.hidden {
+    display: none;
 }
