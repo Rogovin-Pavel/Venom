@@ -23,7 +23,9 @@ module.exports = {
             use: [
                 'style-loader',
                 'css-loader'
-            ],
+            ]
+          },
+          {
             test: /\.scss$/,
             use: [
                 'style-loader',
@@ -31,7 +33,32 @@ module.exports = {
                 'sass-loader'
             ],
             exclude: /node_modules/
-          }
+          },
+          {
+              test: /\.(gif|png|gpe?g|svg)/i,
+              use: [
+                  'file-loader',
+                  {
+                      loader: 'image-webpack-loader',
+                      options: {
+                          gifsicle: {
+                              interlanced: false
+                          },
+                          optipng: {
+                              optimizationLevel: 7
+                          },
+                          pngquant: {
+                              quality: '65-90',
+                              speed: 4
+                          },
+                          mozjpeg: {
+                              progressive: true,
+                              quality: 65
+                          }
+                      }
+                  }
+              ]
+          }       
         ]
     },
     resolve: {

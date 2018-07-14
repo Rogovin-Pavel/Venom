@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import '../stylesheets/body.css';
+import Header from './Header';
+import './../stylesheets/body.css';
 
 class App extends Component {
   constructor(props){
@@ -20,12 +21,11 @@ class App extends Component {
   }
 
   render() {
-      const {pOpen} = this;
-      const {pOpened} = this.state;
+      //const {pOpen} = this;
+      //const {pOpened} = this.state;
       return (
         <div className="body">
-          <p className={pOpened ? "body__p" : "body__p hidden"}>EASY PEASY LEMON SQUEEZY!</p>
-          <button onClick={pOpen} className="body__button">PRESS THIS BUTTON</button>
+          <Header />
         </div>
       )
   }

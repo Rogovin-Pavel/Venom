@@ -1,29 +1,8 @@
 .body {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    height: 600px;
-    background-color: silver;
-    color: black;
-}
-
-.body__p {
-    background-color: gray;
-    align-self: center;
-    padding: 3px;
-    height: 20px;
-    border: 1px solid;
-    border-radius: 20px;
-}
-
-.body__button {
-    position: fixed;
-    top: 250px;
-    left: 250px;
-    align-self: center;
-    height: 20px;
-}
-
-.hidden {
-    display: none;
+    width: 100%;
+    height: 900px;
+    background-color: white;;
+    color: white;
 }
