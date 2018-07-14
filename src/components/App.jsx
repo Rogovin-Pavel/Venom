@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Header from './Header';
 import './../stylesheets/body.css';
+import SideBar from './SideBar';
+import Content from './Content';
 
 class App extends Component {
   constructor(props){
@@ -26,6 +28,10 @@ class App extends Component {
       return (
         <div className="body">
           <Header />
+          <div className="main__content">
+            <SideBar />
+            <Content />
+          </div>
         </div>
       )
   }

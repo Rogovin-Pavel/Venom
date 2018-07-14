@@ -35,7 +35,7 @@ module.exports = {
             exclude: /node_modules/
           },
           {
-              test: /\.(gif|png|gpe?g|svg)/i,
+              test: /\.(gif|png|jpe?g|svg)/i,
               use: [
                   'file-loader',
                   {

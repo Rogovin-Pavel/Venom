@@ -3,6 +3,14 @@
     flex-direction: column;
     width: 100%;
     height: 900px;
-    background-color: white;;
     color: white;
+    background: url("./../img/venom__wallpapper.png");
+    background-color: black;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: row;
 }
