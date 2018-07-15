@@ -1,8 +1,8 @@
 .art {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 720px;
+    justify-content: space-around;
+    width: 60%;
     flex-wrap: wrap;
     height: 400px;
     overflow: auto;
@@ -10,7 +10,8 @@
 
 .art div {
     width: 250px;
-    height: 250px;
+    height: 200px;
+    margin-bottom: 30px;
     cursor: pointer;
 }
 
