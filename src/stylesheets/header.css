@@ -12,15 +12,26 @@ header {
     list-style: none;
 }
 
-.header__nav__menu Button {
+.header__nav__menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.header__nav__menu li {
     margin-right: 20px;
     color: white;
-    border: solid 1px white;
-    border-radius: 20px;
+    font-family: "Gaegu";
+    font-size: 25px;
 }
-.header__nav__menu a {
-    text-decoration: none;
-    color: white;
+
+.header__nav__menu li:hover, 
+.header__nav__menu a:hover {
+    text-decoration: underline;
+    max-width: fit-content;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 .header__logo {
@@ -42,3 +53,4 @@ header {
     background-repeat: no-repeat;
     background-position: right;
 }
+

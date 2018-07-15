@@ -3,34 +3,44 @@ import Header from './Header';
 import './../stylesheets/body.css';
 import SideBar from './SideBar';
 import Content from './Content';
+import data from './../data/data';
 
 class App extends Component {
   constructor(props){
       super(props);
       this.state = {
-        pOpened: true
+        open: {
+          historyState: false,
+          comicsState: false,
+          filmographyState: false,
+          albumState: false
+        }
       }
-      this.pOpen = this.pOpen.bind(this);
+      this.changePage = this.changePage.bind(this);
   }
 
-  pOpen(){
+  changePage(history, comics, filmography, album) {
     this.setState(
       {
-        pOpened: !this.state.pOpened
+        open: {
+          historyState: history,
+          comicsState: comics,
+          filmographyState: filmography,
+          albumState: album
+        }
       }
     )
-    console.log(this.state)
   }
 
   render() {
-      //const {pOpen} = this;
-      //const {pOpened} = this.state;
+      const { changePage } = this;
+      const { open } = this.state;
       return (
         <div className="body">
           <Header />
           <div className="main__content">
-            <SideBar />
-            <Content />
+            <SideBar onPage={changePage} o={open}/>
+            <Content {...data} o={open}/>
           </div>
         </div>
       )
