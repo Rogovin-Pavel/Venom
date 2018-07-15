@@ -1,13 +1,13 @@
 import React from 'react';
 import './../stylesheets/sidebar.css';
 
-const SideBar = ({onPage=f=>f, historyState, comicsState, filmographyState, albumState}) => 
+const SideBar = ({onPage=f=>f, o}) => 
     <aside className="sidebar">
         <ul>
-            <li onClick={()=>onPage(!historyState, comicsState=false, filmographyState=false, albumState=false)}>HISTORY</li>
-            <li onClick={()=>onPage(historyState=false, !comicsState, filmographyState=false, albumState=false)}>COMICS</li>
-            <li onClick={()=>onPage(historyState=false, comicsState=false, !filmographyState, albumState=false)}>FILMOGRAPHY</li>
-            <li onClick={()=>onPage(historyState=false, comicsState=false, filmographyState=false, !albumState)}>ALBUM</li>
+            <li onClick={()=>onPage(!o.historyState, false, false, false)}>HISTORY</li>
+            <li onClick={()=>onPage(false, !o.comicsState, false, false)}>COMICS</li>
+            <li onClick={()=>onPage(false, false, !o.filmographyState, false)}>FILMOGRAPHY</li>
+            <li onClick={()=>onPage(false, false, false, !o.artState)}>FAN ART</li>
         </ul>
     </aside>
 

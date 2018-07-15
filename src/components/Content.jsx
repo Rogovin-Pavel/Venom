@@ -3,7 +3,7 @@ import './../stylesheets/content.css';
 
 
 const Content = ({history, o}) => 
-    <div className={o.historyState ? "history content" : "history content hidden"} overflow="scroll">
+    <div className={o.historyState ? "history content" : "history content hidden"}>
         {history.map((p, i) => <p key={i}>{p}</p>)}
     </div>
     

@@ -1,0 +1,28 @@
+.art {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 720px;
+    flex-wrap: wrap;
+    height: 400px;
+    overflow: auto;
+}
+
+.art div {
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.art::-webkit-scrollbar{
+    width: 10px;
+}
+
+.art::-webkit-scrollbar-thumb{
+    background-color: white;
+    cursor: pointer;
+}

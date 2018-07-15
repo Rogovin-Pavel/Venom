@@ -24,6 +24,14 @@ const data = {
             while the Flash Thompson incarnation was ranked as #27. The character was listed as #33 on Empire Magazine's 
             50 Greatest Comic Book Characters.`
         ],
+        art: [
+            "/src/img/arts/venom_art1.jpg",
+            "/src/img/arts/venom_art2.jpg",
+            "/src/img/arts/venom_art3.jpg",
+            "/src/img/arts/venom_art4.jpg",
+            "/src/img/arts/venom_art5.jpg",
+            "/src/img/arts/venom_art6.jpg",
+        ]
 }
 
 
