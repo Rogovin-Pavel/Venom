@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props){
       super(props);
       this.state = {
-        open: {
+        sideBarClicked: {
           historyState: false,
           comicsState: false,
           filmographyState: false,
@@ -23,7 +23,7 @@ class App extends Component {
   changePage(history, comics, filmography, art) {
     this.setState(
       {
-        open: {
+        sideBarClicked: {
           historyState: history,
           comicsState: comics,
           filmographyState: filmography,
@@ -35,15 +35,14 @@ class App extends Component {
 
   render() {
       const { changePage } = this;
-      const { open } = this.state;
-      console.log(open);
+      const { sideBarClicked } = this.state;
       return (
         <div className="body">
           <Header />
           <div className="main__content">
-            <SideBar onPage={changePage} o={open}/>
-            <Content {...data} o={open}/>
-            <FanArt {...data} o={open} />
+            <SideBar onPage={changePage} o={sideBarClicked}/>
+            <Content {...data} o={sideBarClicked} />
+            <FanArt {...data} o={sideBarClicked} />
           </div>
         </div>
       )

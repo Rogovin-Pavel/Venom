@@ -31,7 +31,10 @@ const data = {
             "/src/img/arts/venom_art4.jpg",
             "/src/img/arts/venom_art5.jpg",
             "/src/img/arts/venom_art6.jpg",
-            "/src/img/arts/venom_art7.jpg"
+            "/src/img/arts/venom_art7.jpg",
+            "/src/img/arts/venom_art8.jpg",
+            "/src/img/arts/venom_art9.jpg",
+            "/src/img/arts/venom_art10.jpg"
         ]
 }
 

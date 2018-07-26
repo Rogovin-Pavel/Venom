@@ -7,7 +7,8 @@ const FanArt = ({art, o}) =>
         <a href={imgUrl} target="_blank">
             <div key={i} style={{background: `url( ${imgUrl})`,
                                  backgroundSize: "120%",
-                                 backgroundRepeat: "no-repeat"
+                                 backgroundRepeat: "no-repeat",
+                                 backgroundPosition: "top center"
                                  }}>
             </div>
         </a>
