@@ -7,7 +7,7 @@ const Header = () =>
         <div className="header__logo"></div>
         <nav>
             <ul className="header__nav__menu">
-                <li>ABOUT ME</li>
+                <li>ABOUT ME LOL</li>
                 <li>EMAIL</li>
                 <li>PHONE</li>
                 <li><a href="https://vk.com/id239609752" target="_blank">VK.COM</a></li>
