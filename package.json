@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My react profile",
   "main": "index.js",
-  "homepage": "https://rogovin-pavel.github.io/venom",
+  "homepage": "https://rogovin-pavel.github.io/Venom",
   "scripts": {
     "deploy": "npm run build&&gh-pages -d build",
     "start": "webpack-dev-server --mode development --open --hot",
