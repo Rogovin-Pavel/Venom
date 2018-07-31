@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "My react profile",
   "main": "index.js",
+  "homepage": "https://rogovin-pavel.github.io/venom",
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d dist",
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production"
   },
@@ -11,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@material-ui/core": "^1.3.1",
+    "gh-pages": "^1.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-foundation": "^0.9.5"
