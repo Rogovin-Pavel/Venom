@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://rogovin-pavel.github.io/Venom/",
   "scripts": {
-    "deploy": "npm run build&&gh-pages -d build",
+    "deploy": "npm run build && gh-pages -d build",
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production"
   },
